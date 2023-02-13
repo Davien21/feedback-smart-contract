@@ -1,9 +1,10 @@
 # feedback-smart-contract
-A basic feedbacks smart contract
-
+### Description
 This is a basic smart contract that stores user feedbacks on-chain and allows one to retrieve all feedbacks later.
 
-Here are a few things to know about this smart contract.
+
+### Breakdown
+Here are a few things to know about this smart contract:
 1. It has a **``feedbackCount``** property for keeping track of the total number of feedbacks added.<br/>
 This **``feedbackCount``** property is also useful in the function that returns all the feedbacks.<br/>
 This is because we will put the feedbacks in an array, and arrays in solidity need to have their size declared when created, unlike in **Javascript**.   
@@ -20,7 +21,9 @@ This **Struct** is then included in our **``idToFeedbackItem``** mapping (earlie
 
 4. Finally It has a **``getAllFeedback``** function that simply returns a messy array of **Feedback Items**.<br/> 
 It's your job on the frontend to write some code to clean up this messy array and form something you can use to display the feedbacks on the frontend.<br/> 
-Oh, and by the way, if you noticed the keywords ***external*** and ***view*** beside the **``getAllFeedback``** function and you're wondering what they are...
+
+### Oh, and by the way... 
+if you noticed the keywords ***external*** and ***view*** beside the **``getAllFeedback``** function and you're wondering what they are...
 
 ***external*** is an access modifier. it means that the function can only be used / called externally - by your wallet or another smart contract.<br/>
 ***view*** is a special keyword means that tells the smart contract that this function is not modifying the state (data in the smart contract)
