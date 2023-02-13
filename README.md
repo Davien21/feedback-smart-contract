@@ -9,7 +9,7 @@ Here are a few things to know about this smart contract:
 This **``feedbackCount``** property is also useful in the function that returns all the feedbacks.<br/>
 This is because we will put the feedbacks in an array, and arrays in solidity need to have their size declared when created, unlike in **Javascript**.   
     
-2. It has a **``idToFeedbackItem``** property which is essentially a **dictionary**, **map** or what we call **object** in Javascript.<br/>
+2. It has an **``idToFeedbackItem``** property which is essentially a **dictionary**, **map** or what we call **object** in Javascript.<br/>
 This property is a key to value mapping of feedbacks in the smart contract.<br/> 
 We like to use mappings in solidity to store data like this instead of arrays.<br/>
 This is because arrays are heavy or ***expensive*** in solidity.<br/> 
@@ -30,7 +30,7 @@ if you noticed the keywords ***external*** and ***view*** beside the **``getAllF
 
 Both of these are used to make the smart contract lighter or more optimised. <br/> 
 I used them because:<br/> 
-a. There was no need for me to use the function internally in the smart contract - external
+a. There was no need for me to use the function internally in the smart contract - external <br/>
 b. I am not modifying the state of the smart contract - view
 
 As time goes on you will learn more about optimising smart contracts to save gas fees and make things faster .
